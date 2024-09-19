@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/GERAL.css">
+    <link rel="stylesheet" href="css/styleclima.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Previsão de Clima</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img id="setaVoltar" src="img/setaVoltar.svg" alt="">
+        </a>
+    </header>
+    <main>
+        <h2 style="text-align: center;">Digite abaixo a cidade que deseja <br>
+            buscar a temperatura</h2>
+        <div class="inputs">
+            <input class="inputClima" id="city" placeholder="Digite a cidade aqui" type="text">
+            <button class="botaoClima" onclick="getWeather()">Enviar</button>
+        </div>
+        <h3 id="temperatura"></h3>
+    </main>
+
+    <script src="script/geral.js"></script>
+    <script src="script/clima.js"></script>
+</body>
+</html>

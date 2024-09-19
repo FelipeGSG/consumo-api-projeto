@@ -1,0 +1,31 @@
+body{
+    color: aliceblue;
+}
+body > main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body > main > .informações img{
+    width: 360px;
+    height: 500px;
+}
+.informações{
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+    font-size: 30px;
+    background-color: rgba(77, 75, 177, 0.108);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+    .informacoesTexto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+.divBotoes{
+    display: flex;
+    gap: 1rem;
+}

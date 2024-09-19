@@ -1,0 +1,37 @@
+body > main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    background-color: rgba(34, 73, 133, 0.392);
+    font-size: 30px;
+}
+input{
+    color: aliceblue;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 4px;
+    background-color: rgba(88, 72, 159, 0.4);
+}   
+    input::placeholder{
+        color: rgba(240, 248, 255, 0.535);
+    }
+.inputs{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.botaoClima{
+    border: 0;
+    padding: 1rem;
+    font-weight: 700;
+    color: aliceblue;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: darkblue;
+}
+    .botaoClima:hover{
+        filter: drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.501));
+        scale: 1.2;
+    }

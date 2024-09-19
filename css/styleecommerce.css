@@ -1,0 +1,59 @@
+
+body{
+}
+.containerMaior{
+    display: grid;
+    grid-template-columns: repeat(3, 520px);
+    grid-template-rows: repeat(2, 38vh);
+    gap: 2rem;
+}
+.container{
+    display: flex;
+    background-color: rgba(75, 84, 90, 0.465);
+    border-radius: 8px;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    overflow-y: auto;
+}
+    .produto{
+        height: 270px;
+        width: 270px;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 5px rgba(56, 54, 54, 0.583));
+    }
+    .informacoes{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+    }
+        .informacoes > .divBotaoComprar {
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .botaoComprar{
+            border: 0;
+            border-radius: 10px;
+            padding: 5px;
+            font-size: 25px;
+            background-color: rgb(17, 17, 200);
+            transition: 0.4s;
+            color: aliceblue;
+        }
+            .botaoComprar:hover{
+                filter: drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.501));
+                scale: 1.2;
+            }
+        #produto1, #preco1, #estoque1,
+        #produto2, #preco2, #estoque2,
+        #produto3, #preco3, #estoque3,
+        #produto4, #preco4, #estoque4,
+        #produto5, #preco5, #estoque5,
+        #produto6, #preco6, #estoque6{
+            color: aliceblue;
+            margin-top: 20px;
+            margin-right: 20px;
+            font-size: 25px;
+        }

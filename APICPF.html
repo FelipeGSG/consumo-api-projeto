@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylecpf.css">
+    <link rel="stylesheet" href="css/GERAL.css">
+    <title>Consulta de CPF</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img id="setaVoltar" src="img/setaVoltar.svg" alt="">
+        </a>
+    </header> 
+    <main>
+        <h1>Para acessar quais CPF estão disponíveis, <a target="_blank" href="https://github.com/FelipeGSG/consumo-api-projeto">clique aqui</a></h1>
+        <input placeholder="Digite o CPF aqui"  type="number" id="input">
+        <button class="botao" onclick="buscar()">Enviar</button>
+            <div class="container">
+                <h1 id="aguardando">Carregando...</h1>
+                <div id="img"></div>
+                <div class="informacoes">
+                    <div id="cpf"></div>
+                    <div id="nome"></div>
+                    <div id="idade"></div>
+                    <div id="cargo"></div>
+                </div>
+            </div>
+    </main>
+
+    <script src="script/geral.js"></script>
+    <script src="script/cpf.js"></script>
+</body>
+</html>

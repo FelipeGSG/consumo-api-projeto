@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(130deg, rgb(4, 4, 101), rgb(94, 6, 101));
+}
+    header{
+        background-color: rgba(59, 81, 221, 0.371);
+        width: 100vw;
+        text-align: center;
+        color: aliceblue;
+    }
+.grade{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 24vw));
+    grid-template-rows: repeat(2,minmax(150px, 35vh));
+    grid-gap: 3rem 4.5rem;
+}
+    .item{
+        margin: 0;
+        padding: 5px;
+        background-color: rgb(71, 22, 117);
+        color: aliceblue;
+        border: 3px solid rgb(240, 240, 241);
+        box-shadow: 1px 1px 15px rgba(245, 245, 245, 0.575);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        overflow: auto;
+    }   
+        .item::-webkit-scrollbar{
+            background-color: rgb(44, 20, 132);
+        }
+        .item::-webkit-scrollbar-thumb{
+            color: aqua;
+            background-color: yellow;
+            border-radius: 20px;   
+        }
+        h3{
+            width: 90%;
+        }
+        a{
+            color: rgba(240, 248, 255, 0.507);
+            font-size: 1.5rem;
+            transition: 0.5s;
+        }
+            a:hover{
+                color: rgb(233, 84, 84);
+                filter: drop-shadow(1px 1px 2px rgba(137, 13, 13, 0.474));
+            }

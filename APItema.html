@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/GERAL.css">
+    <link rel="stylesheet" href="css/styletema.css">
+    <title>Filmes</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img id="setaVoltar" src="img/setaVoltar.svg" alt="">
+        </a>
+    </header>
+    <main>
+        <h1>Clique em um dos botões para mostrar informações sobre o filme</h1>
+        <div class="divBotoes">
+            <button class="botao vingadores" onclick="buscar(1)">Vingadores</button>
+            <button class="botao resgateSoldado" onclick="buscar(2)">O Resgate do Soldado Ryan</button>
+            <button class="botao it" onclick="buscar(3)">It - A Coisa</button>
+            <button class="botao mulan" onclick="buscar(4)">Mulan</button>
+            <button class="botao autoCompadecida" onclick="buscar(5)">O Auto da Compadecida</button>
+            <button class="botao guardioesGalaxia" onclick="buscar(6)">Guardiões da Galáxia</button>
+        </div>
+        <div class="informações">
+            <h1 id="aguardando">Carregando...</h1>
+            <div id="img"></div>
+            <div class="informacoesTexto">
+                <div id="nome"></div>
+                <div id="duracao"></div>
+                <div id="lancamento"></div>
+                <div id="avaliacao"></div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script/geral.js"></script>
+    <script src="script/filmes.js"></script>
+</body>
+</html>

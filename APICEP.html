@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylecep.css">
+    <link rel="stylesheet" href="css/GERAL.css">
+    <title>Consulta de CEP</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img id="setaVoltar" src="img/setaVoltar.svg" alt="">
+        </a>
+    </header>
+    <main>
+        <h1>Insira seu CEP no campo abaixo:</h1>
+        <form action="">
+            <fieldset class="fieldset">
+                <legend>Endereço</legend>
+                <div class="formulario1">
+                    <label for="">CEP:</label><br>
+                    <input placeholder="Insira seu CEP" type="text" id="cep">
+                    <br><br><br>
+                    <label for="">Rua:</label><br>
+                    <input placeholder="Insira sua rua" type="text" readonly id="rua">
+                    <br><br><br>
+                    <label for="">Número:</label><br>
+                    <input placeholder="Insira seu Numero" type="text" id="numero">
+                    <br><br>
+                </div>
+                <div class="formulario2">                    
+                    <label for="">Bairro:</label><br>
+                    <input placeholder="Insira seu bairro" type="text" readonly id="bairro">
+                    <br><br><br>
+                    <label for="">Cidade:</label><br>
+                    <input placeholder="Insira sua cidade " type="text" readonly id="cidade">
+                    <br><br><br>
+                    <label for="">Estado:</label><br>
+                    <input placeholder="Insira seu estado " type="text" readonly id="estado">
+                </div>
+
+            </fieldset>
+        </form>
+    </main>
+    <script src="script/geral.js"></script>
+    <script src="script/cep.js"></script>
+</body>
+</html>
